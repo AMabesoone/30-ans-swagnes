@@ -45,6 +45,13 @@
   @keyframes pop { from { opacity: 0; transform: translateY(14px) rotate(var(--r)) scale(.92); } }
   @media (prefers-reduced-motion: reduce) { .s { animation: none; } }
   @media (max-width: 700px) {
+    .card { padding: 20px 18px; gap: 14px; }
+    .big { font-size: clamp(4.5rem, 22vw, 6rem); }
+    h1 { font-size: 1.5rem; }
+    dl { font-size: 14px; gap: 8px 12px; padding-top: 12px; }
+    dt { font-size: 10px; }
+    .btn { font-size: 15px; padding: 13px 14px; }
+    .inapp, .hint { font-size: 12px; }
     .s1{--x:1%;--y:1%;--w:38vw;--r:-5deg}
     .s2{--x:-3%;--y:29%;--w:21vw;--r:4deg}
     .s3{--x:0%;--y:74%;--w:36vw;--r:-3deg}
@@ -56,7 +63,7 @@
     .s9{--x:80%;--y:51%;--w:20vw;--r:5deg}
     .s10{--x:35%;--y:79%;--w:34vw;--r:3deg}
   }
-  main { position: relative; z-index: 1; width: 100%; max-width: 440px; margin: auto; display: flex; flex-direction: column; gap: 14px; }
+  main { position: relative; z-index: 1; width: 100%; max-width: min(440px, 78vw); margin: auto; display: flex; flex-direction: column; gap: 14px; }
   .card { background: color-mix(in srgb, var(--card) var(--card-a), transparent); -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px);
           border: 1px solid var(--line); border-radius: 20px; padding: 26px 24px; display: flex; flex-direction: column; gap: 18px; }
   .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
